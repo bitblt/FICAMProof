@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<wicket:extend>
+<div id="main">
+        <h3>Verify Identity</h3>
+        <p>Please verify your driver's license information</p>
+        <table>
+            <tr>
+                <th>State</th>
+                <td wicket:id="state">TX
+                </td>
+            </tr>
+            <tr>
+                <th>Number/ID</th>
+                <td wicket:id="number">123456789
+                </td>
+            </tr>
+            <tr>
+                <th>Issue Date</th>
+                <td wicket:id="issueDate">01-01-2012
+                </td>
+            </tr>
+            <tr>
+                <th>Expiration Date</th>
+                <td wicket:id="expiresDate">01-01-2016
+                </td>
+            </tr>
+            <tr>
+                <th>&nbsp;</th>
+                <td>
+                    <input type="button" wicket:id="cancel" value="Cancel" />
+                    <input type="submit" wicket:id="continue" value="Continue" />
+                </td>
+            </tr>
+        </table>
+</div>
+</wicket:extend>
+</body>
+</html>
